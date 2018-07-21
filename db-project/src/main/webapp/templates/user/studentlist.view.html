@@ -1,0 +1,30 @@
+<div>
+<h1>Student Page</h1>
+
+<!-- <div ng-repeat="a in model.help">
+	<h1>{{a.title}}</h1>
+	<h3>{{a.averageRating}}</h3>
+	<h3>{{a.ratingsCount}}</h3>
+	<h3>{{a.language}}</h3><br>
+</div> -->
+
+ <div ng-repeat="a in model.books">
+ 	<a ng-show="a.id" href="#/books/id/{{a.id}}"><div></div></a>
+	<h3> Student </h3>
+	<p><h1>{{a.firstName}} {{a.lastName}} </h1> </p>
+	<br>
+	<h3>Url to look for profile</h3>	<a href="{{a.linkedinurl}}">Linked Url</a>
+	<br>
+	<h3>Studies at</h3>	{{a.universityname}}
+	<br>
+	<h3>Major</h3>	{{a.major}}
+	<br>
+	<h3>Highest Degree</h3>	{{a.highestdegree}}
+	<br>
+	<h3>Skills</h3>	{{a.desc1}} , {{a.desc2}}
+	<br>
+	
+</div> 
+
+
+</div>

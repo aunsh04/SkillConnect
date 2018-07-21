@@ -1,0 +1,76 @@
+<div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="col-xs-1">
+            <a href="#!/" class="navbar-brand ho-left"> <span class="glyphicon glyphicon-chevron-left"></span>
+            </a></div>
+        <div class="col-xs-5 msk-navbar-header zero-padding">
+                <a class="navbar-brand" href="#!/">
+                 <div class="hungry-owl-text ho-navbar-text">Skill Connect</div>
+                </a>
+            </div>
+            
+    </nav>
+
+   <div class="ho-main-body">
+        <div class="col-sm-2 col-xs-1">
+        </div>
+        <div ng-show="model.currentUser.userType" class="col-sm-8 col-xs-10 font-18">
+            You are already Logged In<br>
+            Please click <a href="#!/enduser" class="join-btn">
+            <span class="glyphicon glyphicon-dashboard"></span>
+            Here</a> to navigate to your dashboard.
+        </div>
+        <div ng-show="model.currentUser.userType==undefined" class="col-sm-8 col-xs-10">
+            <h2>Upload your paper details here!</h2>
+           
+            <div>
+         <br>
+        
+         </div>
+            
+            <h2> Paper Registration </h2>
+            <label for ="title">Title</label>
+            <input ng-model="paper.title"
+                   type="text"
+                   id="title"
+                   class="form-control"
+                   placeholder="Title"/>
+                   
+            <label for ="description">Short description</label>
+            <input ng-model="paper.description"
+                   type="text"
+                   id="description"
+                   class="form-control"
+                   placeholder="Short Description"/>
+
+
+           <label for ="year">Publication Year</label>
+            <input ng-model="paper.year"
+                   type="text"
+                   id="year"
+                   class="form-control"
+                   placeholder="Year"/>
+            
+            <label for ="downloadUrl">Link of published paper</label>
+            <input ng-model="paper.downloadUrl"
+                   type="text"
+                   id="downloadUrl"
+                   class="form-control"
+                   placeholder="Paper Link"/>
+            
+            
+            <div>
+            <p> Press The Button Below to Upload your paper! <p>
+            </div>
+            
+            
+            <div class="ho-buttons-margin">
+            	 <a class="btn btn-danger  btn-block" ng-click="model.upload(paper)" href="#/login">Upload Paper</a>
+            </div>
+
+        </div>
+        <div class="col-sm-2 col-xs-1">
+        </div>
+    </div>
+
+</div>

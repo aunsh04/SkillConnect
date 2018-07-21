@@ -1,0 +1,26 @@
+<div>
+<h1>Book Details Page</h1>
+
+<!-- <div ng-repeat="a in model.help">
+	<h1>{{a.title}}</h1>
+	<h3>{{a.averageRating}}</h3>
+	<h3>{{a.ratingsCount}}</h3>
+	<h3>{{a.language}}</h3><br>
+</div> -->
+
+
+<h2>{{model.papers.id}}</h2>
+<h2>{{model.papers.title}}</h2>
+<br>
+<h2>{{model.papers.datePublished}}</h2>
+<br>
+<h2>{{model.papers.description}}</h2>
+<br>
+<h2>{{model.papers.language.name}}</h2>
+<ul ng-repeat="a in model.papers.authors">
+	<h2>{{a}}</h2>
+</ul>
+	
+<a href="{{model.papers.downloadUrl}}">Download paper here!</a>	
+<br>
+</div>

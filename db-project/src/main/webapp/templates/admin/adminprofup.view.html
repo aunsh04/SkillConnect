@@ -1,0 +1,120 @@
+<div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="col-xs-1">
+            <a href="#!/" class="navbar-brand ho-left"> <span class="glyphicon glyphicon-chevron-left"></span>
+            </a></div>
+        <div class="col-xs-5 msk-navbar-header zero-padding">
+                <a class="navbar-brand" href="#!/">
+                 <div class="hungry-owl-text ho-navbar-text">Skill Connect</div>
+                </a>
+            </div>
+            
+    </nav>
+
+   <div class="ho-main-body">
+        <div class="col-sm-2 col-xs-1">
+        </div>
+        
+            <h2>Skill Connect</h2>
+           
+            <div>
+         <br>
+        
+         </div>
+            
+            <h2> Professor Update </h2>
+            <label for ="firstName">First Name</label>
+            <input ng-model="user.firstName"
+                   type="text"
+                   id="firstName"
+                   class="form-control"
+                   placeholder="firstName"/>
+            <label for ="lastName">Last Name</label>
+            <input ng-model="user.lastName"
+                   type="text"
+                   id="lastName"
+                   class="form-control"
+                   placeholder="lastName"/>
+            <label for ="email">E-mail</label>
+            <input ng-model="user.email"
+                   type="text"
+                   id="email"
+                   class="form-control"
+                   placeholder="email@mail.com"/>
+
+            <label for ="username">Username</label>
+            <input ng-model="user.username"
+                   type="text"
+                   id="username"
+                   class="form-control"
+                   placeholder="username"/>
+
+            <label for ="password">Password</label>
+            <input ng-model="user.password"
+                   type="password"
+                   id="password"
+                   class="form-control"
+                   placeholder="password"/>
+
+           <label for ="age">Age</label>
+            <input ng-model="user.age"
+                   type="text"
+                   id="age"
+                   class="form-control"
+                   placeholder="Age"/>
+ 			
+ 			
+            <label for ="address">Address</label>
+            <input ng-model="user.address"
+                   type="text"
+                   id="address"
+                   class="form-control"
+                   placeholder="Address"/>
+             
+            <label for ="city">City</label>
+            <input ng-model="user.city"
+                   type="text"
+                   id="city"
+                   class="form-control"
+                   placeholder="City"/>
+ 
+ 			<label for ="state">State</label>
+            <input ng-model="user.state"
+                   type="text"
+                   id="state"
+                   class="form-control"
+                   placeholder="State"/>
+            
+            <label for ="profat">Prof At</label>
+            <input ng-model="user.profat"
+                   type="text"
+                   id="profat"
+                   class="form-control"
+                   placeholder="Prof At"/>
+            
+            <label for ="profdegree">Prof Degree</label>
+            <input ng-model="user.profdegree"
+                   type="text"
+                   id="profdegree"
+                   class="form-control"
+                   placeholder="Prof Degree"/>
+            
+            
+            <div>
+            <p> DOWN TO UPDATE <p>
+            </div>
+            
+            
+            <div class="ho-buttons-margin">
+            	 <a class="btn btn-danger  btn-block" ng-click="model.updateprof(user,model.profid)"">Professor Update</a>
+            </div>
+            
+            
+            
+
+        </div>
+        <div class="col-sm-2 col-xs-1">
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,25 @@
+<div>
+<h1>BookList Page</h1>
+
+ <div ng-repeat="a in model.books">
+ 	<a ng-show="a.id" href="#/books/id/{{a.id}}"><div><h3>{{a.volumeInfo.title}}</h3></div></a>
+	
+	
+	<ul>
+		<li>Rating--{{a.volumeInfo.averageRating}}</li>
+		<li>Rating Counts--{{a.volumeInfo.ratingsCount}}</li>
+		<li>Language--{{a.volumeInfo.language}}</li>
+	</ul>
+	<div class="item item-divider">
+	<br>
+	<button>
+		<a href="#/prof/{{a.id}}/{{model.profid}}">
+		Endorse the book
+		</a>
+		</button>
+</div> 
+
+
+</div>
+
+

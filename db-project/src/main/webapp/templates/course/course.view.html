@@ -1,0 +1,14 @@
+<div>
+<h1>CourseList Page</h1>
+
+ <div ng-repeat="a in model.courses">
+ 	<a ng-show="a.id" href="#/courses/id/{{model.sId}}/{{a.id}}"><div>{{a.title}}</div></a>
+	<h1>{{a.id}}</h1>
+	<table>
+	<tr>
+		<td>{{a.summary}}</td>
+	</tr>
+	</table>
+	<br>
+</div>
+</div>

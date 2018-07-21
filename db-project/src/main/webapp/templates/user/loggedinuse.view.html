@@ -1,0 +1,173 @@
+
+<div class="container profile">
+
+
+  <div class="row">
+    <div class="span12">
+      <div class="well well-small clearfix">
+        <div class="row-fluid">
+          <div class="span2">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSfpGcZfNOEMi5KxNb9tPlxzhY4BXZIFC8x1K4i1PbjjeFGnnJ"/>         
+          </div>
+          <div class="span4">
+             <h2>{{model.name}} {{model.last}}</h2>
+              
+            <ul class="unstyled">
+              <li>ID-<i class="fa fa-child">--</i>{{model.id}}</li>
+              <li>AGE-<i class="fa fa-calendar">--</i> {{model.age}}</li>
+              <li>Address-<i class="fa fa-address-card"></i>{{model.address}}</li>
+              <li>Email-<i class="icon-email"></i> {{model.email}}</li>
+              <li>{{model.state}}</li>
+              <li>{{model.city}}</li>
+          <p>{{model.uni}} {{model.major}} {{model.highestdegree}} {{model.s1}} {{model.s2}}</p>
+           <p>{{model.comp}}</p>
+            <p>{{model.profat}}  {{model.profd}}</p>
+            </ul>
+          </div>
+          
+      <!--Body content-->
+    </div>
+  </div>
+    
+    
+    
+    <div ng-switch ="model.type">
+    <div ng-switch-when="p">
+    <input ng-model="user.book"
+                   type="text"
+                   id="bookname"
+                   class="form-control"
+                   placeholder="Book to search"/>
+    <button type="button" class="btn btn-success" >
+    <a href= "#/prof/{{model.id}}/bookserch/{{user.book}}"> Search for books </a></button>
+    <br>
+    <br>
+    <input ng-model="user.prof"
+                   type="text"
+                   id="bookname"
+                   class="form-control"
+                   placeholder="Professor to search"/>
+    <button type="button" class="btn btn-success" >
+    <a href= "#/prof/prof1/{{model.id}}/follow/{{user.prof}}"> Search for Professor</a></button>
+    
+    <br>
+    <br>
+    <p>Do you Wish to upload a Paper</p>
+    
+    <button type="button" class="btn btn-success" >
+    <a href= "#/prof/{{model.id}}/upload"> Upload a paper </a></button>
+    
+    <br>
+    
+    <h3>Students following this professsor are:</h3>
+    	<ol ng-repeat="c in model.followers">
+	<ul>{{c.firstName}}</ul>
+	</ol>
+	
+	<br>
+	
+	<h3>Papers uploaded by this professsor are:</h3>
+    	<ol ng-repeat="c in model.papersUploaded">
+	<ul><a href= {{c.downloadUrl}}>{{c.title}}</a></ul>
+	</ol>
+	<br>
+	<h3>Professor following this professor are:</h3>
+    	<ol ng-repeat="c in model.profsFollowing">
+	<ul>{{c.firstName}}</ul>
+	</ol>
+	<br>
+	
+	<h3>Professor followed by this professor are:</h3>
+    	<ol ng-repeat="c in model.profsFollowedByProf">
+	<ul>{{c.firstName}}</ul>
+	</ol>
+	
+		<h3>Books endorsed by this professor are:</h3>
+    	<ol ng-repeat="c in model.endorsedBooksByProf">
+	<ul>{{c.title}}</ul>
+	</ol>
+	
+    </div>
+    <br>
+    <div ng-switch-when="s">
+    <input ng-model="user.book"
+                   type="text"
+                   id="bookname"
+                   class="form-control"
+                   placeholder="Book to search"/>
+    <br>
+    <button type="button" class="btn btn-success" >
+    <a href= "#/books/{{user.book}}"> Search for books </a></button>
+    <br>
+    <input ng-model="user.prof"
+                   type="text"
+                   id="bookname"
+                   class="form-control"
+                   placeholder="Professor to search"/>
+    <br>
+    <button type="button" class="btn btn-success" >
+    <a href= "#/student/prof/{{model.id}}/follow/{{user.prof}}"> Search for Professor</a></button>
+    <br>
+    <br>
+    
+        <input ng-model="user.courses"
+                   type="text"
+                   id="coursename"
+                   class="form-control"
+                   placeholder="Course to search"/>
+    <button type="button" class="btn btn-success" >
+    <a href= "#/courses/{{model.id}}/{{user.courses}}"> Search for Courses</a></button>
+    
+    <br>
+    
+    
+        <input ng-model="user.paper"
+                   type="text"
+                   id="papername"
+                   class="form-control"
+                   placeholder="Paper to search"/>
+    <br>
+    <button type="button" class="btn btn-success" >
+    <a href= "#/papers/{{user.paper}}"> Search for Paper</a></button>
+    
+    
+    </div>
+    
+    
+    <div ng-switch-when="r">
+    <input ng-model="user.book"
+                   type="text"
+                   id="bookname"
+                   class="form-control"
+                   placeholder="Book to search"/>
+    <br>
+    <button type="button" class="btn btn-success" >
+    <a href= "#/books/{{user.book}}"> Search for books </a></button>    
+    <br>
+    <br>
+    <input ng-model="user.skill"
+                   type="text"
+                   id="bookname"
+                   class="form-control"
+                   placeholder="Skill name"/>
+         <br>
+    <button type="button" class="btn btn-success" >
+    <a href= "#/rec/student/skill/{{user.skill}}"> Search for Skilled student </a></button>
+    </div>
+    
+     <div ng-switch-when="a">
+    
+    <a href= "#/admin"> Go to ADMIN PAGE</a></button>
+    </div>
+    <div ng-switch-default>
+    
+    </div>
+    
+    
+</div>
+      <br>
+      <br>
+      <button align="right" type="button" class="btn btn-success" >
+    <a href= "#/home"> LOGOUT </a></button>
+    </div>     
+</div>

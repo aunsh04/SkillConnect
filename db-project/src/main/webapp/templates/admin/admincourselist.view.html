@@ -1,0 +1,18 @@
+<div>
+<h1>Course List</h1>
+Title
+<div ng-repeat="a in model.courses">
+<h4>
+   {{a.title}}
+ </h4>
+ <div ng-repeat="b in a.courseReviews">
+   	{{b}}
+   	 <a  type="button" class="btn btn-danger" ng-click= "model.coursereviewrem(b.studentId,b.courseId)" >Delete</a>
+   	</div>
+ <a  type="button" class="btn btn-danger" href="javascript:window.location.reload(true)" ng-click= "model.coursedel(a.id)" >Delete</a>
+<a type="button" class="btn btn-danger" href="#/admin/course/{{a.id}}">Update</a>
+													
+<br>
+</div>
+
+</div>

@@ -1,0 +1,64 @@
+<div>
+<h1>Course Details Page</h1>
+
+<!-- <div ng-repeat="a in model.help">
+	<h1>{{a.title}}</h1>
+	<h3>{{a.averageRating}}</h3>
+	<h3>{{a.ratingsCount}}</h3>
+	<h3>{{a.language}}</h3><br>
+</div> -->
+
+ <div class="col-xs-3">
+<p>
+ <img src=   "{{model.courses.imageURL}}"/>
+
+		<table border = 1>
+	<tr>
+		<th>Title</th>
+		<th>Course Home Page</th>
+		<th>YouTube URL</th>
+
+		
+	</tr>
+	
+	
+	
+	
+	<tr>
+		<td>{{model.courses.title}}</td>
+		<td><a href="{{model.courses.courseURL}}">Link to Udacity Home Page</a></td>
+		<td><a href="{{model.courses.youTubeUrl}}">Link to YouTube video</a></td>
+		
+	</tr>
+	
+	
+	</table>
+	</p>
+	</div>
+  <div class="col-xs-5">
+	{{model.courses.summary}}
+				<label for ="review">Title</label>
+	            <input ng-model="studentcoursereview.review"
+                   type="text"
+                   id="review"
+                   class="form-control"
+                   placeholder="Title"/>
+                   
+                   <div class="ho-buttons-margin">
+            	 <a class="btn btn-danger  btn-block" ng-click="model.review(studentcoursereview,model.sId,model.cId)" href="#/login">Review</a>
+            </div>
+
+</div>
+<div ng-repeat="a in model.studNames">
+<h3>{{a}}</h3>
+</div>
+
+<div ng-repeat="a in model.reviewsContent">
+<h3>{{a}}</h3>
+</div>
+
+
+ 
+
+
+</div>

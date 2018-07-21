@@ -1,0 +1,15 @@
+<div>
+<h1>Professor List</h1>
+FirstName   LastName    ComapnyName
+<div ng-repeat="a in model.prof">
+<h4>
+   {{a.firstName}}
+        {{a.lastName}}
+     
+ </h4>
+ <a type="button" class="btn btn-danger" href="javascript:window.location.reload(true)" ng-click= "model.profdel(a.id)">Delete</a>
+<a type="button" class="btn btn-danger" href="#/admin/professor/{{a.id}}">Update</a>
+<br>
+</div>
+
+</div>

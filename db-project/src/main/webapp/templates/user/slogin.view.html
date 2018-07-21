@@ -1,0 +1,38 @@
+
+
+   <div class="ho-main-body">
+        <div class="col-sm-2 col-xs-1">
+        </div>
+        
+        <div ng-show="model.currentUser.userType==undefined" class="col-sm-8 col-xs-10">
+           
+           
+            <div>
+         <br>
+        
+         </div>
+         
+          <h2>Student Login</h2>
+          <label for ="un">Username</label>
+            <input ng-model="user.username"
+                   type="text"
+                   id="username"
+                   class="form-control"
+                   placeholder="UserName"/>
+                   
+             <label for ="password">Password</label>
+            <input ng-model="user.password"
+                   type="password"
+                   id="password"
+                   class="form-control"
+                   placeholder="Password"/> 
+                   
+         
+         <br>
+         <div class="ho-buttons-margin">
+                <a class="btn btn-danger  btn-block" ng-click="model.slogin(user.username,user.password)" >Login</a>
+            	 
+           </div>
+         
+   </div>   
+   </div>   

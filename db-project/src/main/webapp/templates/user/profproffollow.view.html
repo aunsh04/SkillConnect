@@ -1,0 +1,31 @@
+<div>
+<h1>Prof Search By FirstName</h1>
+
+
+
+ <div ng-repeat="a in model.profs">
+ 	
+	
+	<table>
+	<tr>
+		<td>{{a.firstName}}</td>
+		<td>{{a.lastName}}</td>
+		<td>{{a.email}}</td>
+		<td>{{a.address}}</td>
+		<td>{{a.profat}}</td>
+		<td>{{a.profdegree}}</td>
+	
+	</tr>
+	
+	</table>
+
+<a href="#/prof/{{model.pid}}/proffollow/{{a.id}}">
+		Follow
+		</a>
+	<br>
+</div> 
+
+
+
+
+</div>

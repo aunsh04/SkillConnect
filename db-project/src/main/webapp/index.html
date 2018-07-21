@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
+    
+        <script src="app.js"></script>
+    <script src="config.js"></script>
+    
+    <script src="controllers/admin/admin.controller.client.js"></script>
+    <script src="controllers/user/recruiterstudent.controller.client.js"></script>
+    <script src="controllers/paper/uploadpaper.controller.client.js"></script>
+    <script src="controllers/paper/paper.controller.client.js"></script>
+    <script src= "service/paper/paper.service.client.js"></script>
+    <script src="controllers/paper/paperdetails.controller.client.js"></script>
+    <script src="controllers/user/mainFollow.controller.client.js"></script>
+    <script src="controllers/user/proffollowController.client.js"></script>
+    <script src="controllers/user/profproffollowController.client.js"></script>
+    <script src="controllers/user/profprofmainfollowController.client.js"></script>
+     <script src="controllers/user/login.controller.client.js"></script>
+     <script src="controllers/book/profbook.controller.client.js"></script>
+     <script src= "service/user/user.service.client.js"></script>
+     <script src="controllers/user/student.controller.client.js"></script>
+     <script src= "service/user/student.service.client.js"></script>
+	<script src="controllers/user/register.controller.client.js"></script>
+	<script src="controllers/user/loggedin.controller.client.js"></script>
+	<script src="controllers/book/endorsebook.controller.client.js"></script>
+	<script src="controllers/course/course.controller.client.js"></script>
+	<script src= "service/course/course.service.client.js"></script>
+	<script src= "service/book/book.service.client.js"></script>
+	<script src= "controllers/book/book.controller.client.js"></script>
+	<script src= "controllers/book/bookdetails.controller.client.js"></script>
+	<script src= "controllers/course/coursedetails.controller.client.js"></script>
+    
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        
+ <style>
+body {
+    background-image : url("http://ak2.picdn.net/shutterstock/videos/23850232/thumb/1.jpg");
+	height: 100%; 
+
+    
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 150%;
+}
+.logoutLblPos{
+	color:#000000;
+   position:fixed;
+   right:10px;
+   top:5px;
+}
+</style>       
+</head>
+
+
+<body ng-app="DBProject" >
+<div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="col-xs-1">
+            <a href="#!/" class="navbar-brand ho-left"> <span class="glyphicon glyphicon-chevron-left"></span>
+            </a></div>
+        <div class="col-xs-5 msk-navbar-header zero-padding">
+                <a class="navbar-brand" href="#!/">
+                 <div class="hungry-owl-text ho-navbar-text">Skill Connect</div>
+                </a>
+            </div>
+            
+    </nav>
+
+<br>
+<br>
+<br>
+<br>
+<div ng-view></div>
+</body>
+</html>

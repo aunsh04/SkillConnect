@@ -1,0 +1,20 @@
+<div>
+<h1>Book List</h1>
+Title
+<div ng-repeat="a in model.books">
+<h4>
+   {{a.title}}
+   <div ng-repeat="b in a.endorsedProfessors">
+   	{{b}}
+   	 <a  type="button" class="btn btn-danger" ng-click= "model.endorsedbookdel(b.id,a.id)" >Delete</a>
+   	</div>
+  	
+   
+ </h4>
+ <a  type="button" class="btn btn-danger" href="javascript:window.location.reload(true)" ng-click= "model.bookdel(a.id)" >Delete</a>
+<a type="button" class="btn btn-danger" href="#/admin/book/{{a.id}}">Update</a>
+													
+<br>
+</div>
+
+</div>

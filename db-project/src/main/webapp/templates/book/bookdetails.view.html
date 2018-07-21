@@ -1,0 +1,65 @@
+<div>
+<h3>Book Details Page</h3>
+<h1>{{model.books.title}}</h1>
+<!-- <div ng-repeat="a in model.help">
+	<h1>{{a.title}}</h1>
+	<h3>{{a.averageRating}}</h3>
+	<h3>{{a.ratingsCount}}</h3>
+	<h3>{{a.language}}</h3><br>
+</div> -->
+
+ <div class="col-sm-3">
+<p>
+ <img src=   "{{model.books.imageLinks.smallThumbnail}}"/>
+
+		<table border = 1>
+	<tr>
+		<th>Title</th>
+		<th>Average Rating</th>
+		<th>Rating Count</th>
+		<th>Language</th>
+		<th>pageCount</th>
+		
+	</tr>
+	<tr>
+		<td>{{model.books.title}}</td>
+		<td>{{model.books.averageRating}}</td>
+		<td>{{model.books.ratingsCount}}</td>
+		<td>{{model.books.language}}</td>
+		<td>{{model.books.pageCount}}</td>
+		
+	</tr>
+	<h4><a href="{{model.books.previewLink}}">Preview Link to Google Books</a></h4>
+	
+	</table>
+	</p>
+	</div>
+  <div class="col-sm-6">
+	<h3>Description in short</h3>
+<html><body>{{model.books.description}}</body></html>
+	<ol>
+	
+	<ul ng-repeat="b in model.books.categories">
+	{{b}}
+	</ul>
+	
+	</ol>
+	
+		
+	<br>
+</div>
+<div class="col-sm-3">	
+<h3>Authors</h3>
+	<ol ng-repeat="a in model.books.authors">
+	<li>{{a}}</li>
+	</ol>
+	<h3>Endorsed By</h3>
+	<ol ng-repeat="c in model.endorsements">
+	
+	<li>{{c.firstName}}</li>
+	
+	</ol>
+</div> 
+
+
+</div>

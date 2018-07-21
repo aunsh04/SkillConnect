@@ -1,0 +1,16 @@
+<div>
+<h1>Recrcuiter List</h1>
+FirstName   LastName    ComapnyName
+<div ng-repeat="a in model.recru">
+<h4>
+   {{a.firstName}}
+        {{a.lastName}}
+     {{a.companyname}}
+ </h4>
+ <a  type="button" class="btn btn-danger" href="javascript:window.location.reload(true)" ng-click= "model.recdel(a.id)" >Delete</a>
+<a type="button" class="btn btn-danger" href="#/admin/recruiter/{{a.id}}">Update</a>
+
+<br>
+</div>
+
+</div>
