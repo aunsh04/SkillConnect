@@ -9,6 +9,9 @@ SkillConnect is an application that will act as a hub of study resources for stu
 The primary purpose of this application is to serve as a knowledge hub and a portal to bridge the gap between students and professors, recruiters. There are four potential domain objects and the relations between them are:
 
 Courses: The application provides information for online courses related to different topics and subjects from websites like Udacity, edX and Udemy. Details such as course description, cost, professors and the url of the course dashboard page
+
 Reviews: The application fetches the course reviews from the relevant APIs and students can provide a review for the course they have taken
+
 Research Papers: Professors can upload their research papers which can be viewed by students. This will help students learn, identify and communicate with professors currently working in their areas of interest
+
 Books: Users can view books of different domains – students can view books of their interest, Professors can endorse a book for students which can help students study for a course or gain knowledge
